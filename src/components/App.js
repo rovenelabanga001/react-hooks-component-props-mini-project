@@ -3,16 +3,14 @@ import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList";
-import logo from "../assets/logo";
-
-console.log(blogData);
 
 function App() {
+  console.log(blogData.image);
   return (
     <div className="App">
-      <Header name="Underreacted" image={logo} />
-      <About about="A blog about learning React" />
-      <ArticleList />
+      <Header name={blogData.name} />
+      <About about={blogData.about} image={blogData.image} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }

@@ -5,11 +5,9 @@ export default function About({
   about,
 }) {
   return (
-    <main>
-      <aside>
-        <img src={image} alt="blog logo"></img>
-        <p>{about}</p>
-      </aside>
-    </main>
+    <aside>
+      <img src={image} alt="blog logo"></img>
+      <p>{about}</p>
+    </aside>
   );
 }
